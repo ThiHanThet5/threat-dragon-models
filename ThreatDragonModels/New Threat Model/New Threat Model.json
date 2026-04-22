@@ -40,7 +40,8 @@
                 "774a9b6e-aa65-4b0c-92e7-ab00c6145d3d",
                 "9ca9db76-0aee-4130-b902-21ece79b321a",
                 "c7ecaa81-fa1e-4641-81c9-4951cf578f2d",
-                "3d25ee58-37e4-4442-b9a6-c5b52e4deef4"
+                "3d25ee58-37e4-4442-b9a6-c5b52e4deef4",
+                "4f7615d7-a0ef-42b7-a2f6-59d2dee38eb9"
               ],
               "containedElements": [
                 "d8abd81d-9bee-4ec3-9aad-fd5bd69d4caf",
@@ -179,7 +180,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Account \nCreation"
+                "text": "Account Cred"
               },
               "body": {
                 "stroke": "#333333",
@@ -275,7 +276,7 @@
             "id": "6ecb36c6-c66e-47a6-b037-63687654f72a",
             "data": {
               "type": "tm.Process",
-              "name": "Account Creation",
+              "name": "Account Cred ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1360,7 +1361,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Req ",
+              "name": "Login Req ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1374,7 +1375,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Req"
+              "Logi Req "
             ],
             "id": "85d98a0d-65f3-4ff3-8c67-a56948418f08",
             "source": {
@@ -1642,7 +1643,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Store hasshed Credentials ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1658,7 +1659,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Store hasshed Credentials"
             ],
             "id": "774a9b6e-aa65-4b0c-92e7-ab00c6145d3d",
             "source": {
@@ -1691,7 +1692,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Check User record ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1707,7 +1708,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Check User record"
             ],
             "id": "9ca9db76-0aee-4130-b902-21ece79b321a",
             "source": {
@@ -1869,6 +1870,60 @@
               "port": "44183217-b7f3-4f91-bc7d-649dbf20eb9c"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read (risk) ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2d8c4515-d46a-462e-a24f-0d58323a8187"
+              ]
+            },
+            "labels": [
+              "Read (risk)"
+            ],
+            "id": "4f7615d7-a0ef-42b7-a2f6-59d2dee38eb9",
+            "source": {
+              "x": 335,
+              "y": 809
+            },
+            "target": {
+              "cell": "1aeef233-2551-4f3f-b966-a4f1e6f3e827",
+              "port": "86ea0cdd-ec1f-4903-9818-53d5c30e2f26"
+            },
+            "vertices": [
+              {
+                "x": 910,
+                "y": 809
+              }
+            ]
           },
           {
             "position": {
